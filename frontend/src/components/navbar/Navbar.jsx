@@ -78,7 +78,7 @@ const handleLogout = async () => {
      <Link
   to={currentUser?.isSeller ? "/seller-dashboard" : "/"}
 >
-  <span>fiverr</span>
+  <span>Fiverr</span>
   <span className="text-[#1dbf73]">.</span>
 </Link>
 
