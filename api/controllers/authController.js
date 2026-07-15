@@ -101,10 +101,13 @@ export const loginUser = async (req, res) => {
       user: info,
     });
   } catch (err) {
-    res.status(500).json({
-      message: "Login failed",
-    });
-  }
+  console.error("LOGIN ERROR:", err);
+
+  res.status(500).json({
+    message: "Login failed",
+    error: err.message,
+  });
+}
 };
 
 // LOGOUT
