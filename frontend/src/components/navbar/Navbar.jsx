@@ -40,9 +40,8 @@ const handleLogout = async () => {
       {
         withCredentials: true,
       }
-    );
-
-    localStorage.removeItem("currentUser");
+    );localStorage.removeItem("token");
+localStorage.removeItem("currentUser");
 
     toast.success("Logged out successfully!", {
       id: toastId,
