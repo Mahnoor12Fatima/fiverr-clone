@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
+import newRequest from "../../utils/newRequest";
 
 const LoginModal = ({ isOpen, onClose, mode }) => {
   const [showPassword, setShowPassword] = useState(false);
@@ -47,9 +48,8 @@ const handleSubmit = async (e) => {
 
   try {
     if (mode === "login") {
-      const res = await axios.post(
-        "http://localhost:4000/auth/login",
-        {
+      
+          const res = await newRequest.post("/auth/login", {
           username: formData.username,
           password: formData.password,
         }
@@ -79,9 +79,7 @@ const handleSubmit = async (e) => {
     } else {
       const imageUrl = await uploadImage();
 
-      await axios.post(
-        "http://localhost:4000/auth/register",
-        {
+     await newRequest.post("/auth/register", {
           ...formData,
           img: imageUrl,
         }

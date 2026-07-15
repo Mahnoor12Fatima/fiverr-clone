@@ -34,8 +34,7 @@ const handleLogout = async () => {
   const toastId = toast.loading("Logging out...");
 
   try {
-    await axios.post(
-      "http://localhost:4000/auth/logout",
+    const res = await newRequest.post("/auth/logout", 
       {},
       {
         withCredentials: true,
