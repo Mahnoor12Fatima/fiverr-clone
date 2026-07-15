@@ -4,6 +4,7 @@ import LoginModal from "../loginModal/LoginModal";
 import axios from "axios";
 import toast from "react-hot-toast";
 import Add from "../addGigModal/AddGigModal";
+import newRequest from "../../utils/newRequest";
 function Navbar() {
   const navigate = useNavigate();
   const [authModal, setAuthModal] = useState({
