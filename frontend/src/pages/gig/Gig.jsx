@@ -24,6 +24,17 @@ const navigate = useNavigate();
   return res.data;
 },
   });
+  const handleCheckout = async () => {
+  try {
+    const res = await newRequest.post(
+      `/orders/checkout/${id}`
+    );
+
+    window.location.href = res.data.url;
+  } catch (err) {
+    console.log(err);
+  }
+};
  const conversationMutation = useMutation({
   mutationFn: async () => {
     const res = await newRequest.post("/conversations", {
@@ -301,13 +312,12 @@ console.log("ERROR:", error);
 </ul>
 {!currentUser?.isSeller &&
  currentUser?._id !== data?.userId && (
-  <Link to={`/pay/${id}`}>
-    <button
-      className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl font-semibold"
-    >
-      Continue
-    </button>
-  </Link>
+ <button
+  onClick={handleCheckout}
+  className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl font-semibold"
+>
+  Continue
+</button>
 )}
 
             </div>
