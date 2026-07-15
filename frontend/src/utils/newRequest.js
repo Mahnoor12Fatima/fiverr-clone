@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const newRequest = axios.create({
-  baseURL: "fiverr-clone-production-c2eb.up.railway.app",
+  baseURL: "https://fiverr-clone-production-c2eb.up.railway.app",
 });
 
 newRequest.interceptors.request.use(
