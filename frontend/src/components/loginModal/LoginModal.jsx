@@ -148,7 +148,7 @@ const handleSubmit = async (e) => {
               className="absolute inset-0 w-full h-full object-cover"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-br from-[#7d0c27]/90 to-black/70" />
+            <div className="absolute inset-0 bg-gradient-to-br from-green-700/90 to-black/70" />
 
             <div className="relative z-10 flex flex-col justify-center px-14 text-white">
               <h1 className="text-5xl font-extrabold leading-tight mb-8">
