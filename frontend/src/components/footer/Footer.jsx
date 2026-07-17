@@ -2,13 +2,12 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="flex justify-center text-gray-500 my-12">
-      <div className="max-w-[1400px] w-full px-6">
+ <footer className="mt-auto bg-gradient-to-br from-green-950 via-green-900 to-green-950 text-gray-300 border-t border-green-800">   <div className="max-w-[1400px] w-full px-6">
         
         {/* Top Section */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 pt-12 gap-8">
           <div className="flex flex-col gap-4">
-            <h2 className="text-base font-semibold text-gray-700">
+            <h2 className="text-base font-semibold text-white">
               Categories
             </h2>
             <span>Graphics & Design</span>
@@ -25,7 +24,7 @@ function Footer() {
           </div>
 
           <div className="flex flex-col gap-4">
-            <h2 className="text-base font-semibold text-gray-700">About</h2>
+            <h2 className="text-base font-semibold text-white">About</h2>
             <span>Press & News</span>
             <span>Partnerships</span>
             <span>Privacy Policy</span>
@@ -36,7 +35,7 @@ function Footer() {
           </div>
 
           <div className="flex flex-col gap-4">
-            <h2 className="text-base font-semibold text-gray-700">Support</h2>
+            <h2 className="text-base font-semibold text-white">Support</h2>
             <span>Help & Support</span>
             <span>Trust & Safety</span>
             <span>Selling on Fiverr</span>
@@ -44,7 +43,7 @@ function Footer() {
           </div>
 
           <div className="flex flex-col gap-4">
-            <h2 className="text-base font-semibold text-gray-700">
+            <h2 className="text-base font-semibold text-white">
               Community
             </h2>
             <span>Customer Success Stories</span>
@@ -61,7 +60,7 @@ function Footer() {
           </div>
 
           <div className="flex flex-col gap-4">
-            <h2 className="text-base font-semibold text-gray-700">
+            <h2 className="text-base font-semibold text-white">
               More From Fiverr
             </h2>
             <span>Fiverr Business</span>
@@ -81,11 +80,11 @@ function Footer() {
         <hr className="my-12 border-gray-200" />
 
         {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="flex pb-8 flex-col md:flex-row items-center justify-between gap-6">
           
           {/* Left */}
           <div className="flex items-center gap-4">
-            <h2 className="text-2xl font-bold text-gray-700">fiverr</h2>
+            <h2 className="text-2xl font-bold text-white">fiverr</h2>
             <span className="text-sm whitespace-nowrap">
               © fiverr International Ltd. 2023
             </span>
