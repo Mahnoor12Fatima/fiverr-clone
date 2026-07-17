@@ -104,11 +104,7 @@ localStorage.removeItem("currentUser");
   onClose={() => setGigModalOpen(false)}
 />
 
-          {!currentUser?.isSeller && (
-            <span className="hidden lg:block whitespace-nowrap">
-              Become a Seller
-            </span>
-          )}
+       
 {currentUser ? (
 <div className="relative">
   <div
