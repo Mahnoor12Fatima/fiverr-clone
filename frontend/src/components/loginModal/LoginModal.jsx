@@ -401,16 +401,7 @@ const handleSubmit = async (e) => {
                     </>
                   )}
 
-                  {mode === "login" && (
-                    <div className="flex justify-end">
-                      <button
-                        type="button"
-                        className="text-sm text-[#7d0c27] font-medium"
-                      >
-                        Forgot Password?
-                      </button>
-                    </div>
-                  )}
+               
 
                   <button
                     type="submit"
