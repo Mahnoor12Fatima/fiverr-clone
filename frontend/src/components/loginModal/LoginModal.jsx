@@ -414,36 +414,15 @@ const handleSubmit = async (e) => {
 
                   <button
                     type="submit"
-                    className="w-full h-12 rounded-lg bg-[#7d0c27] text-white font-semibold hover:bg-[#65091f] transition"
+                    className="w-full h-12 rounded-lg  text-white font-semibold bg-[#1dbf73] hover:bg-[#17a463]  transition"
                   >
                     {mode === "login"
                       ? "Sign In"
                       : "Create Account"}
                   </button>
 
-                  <div className="flex items-center gap-3 py-2">
-                    <div className="flex-1 border-t"></div>
-                    <span className="text-xs text-gray-400">
-                      OR CONTINUE WITH
-                    </span>
-                    <div className="flex-1 border-t"></div>
-                  </div>
+                 
 
-                  <div className="grid grid-cols-2 gap-3">
-                    <button
-                      type="button"
-                      className="h-11 rounded-lg border hover:bg-gray-50 transition"
-                    >
-                      Google
-                    </button>
-
-                    <button
-                      type="button"
-                      className="h-11 rounded-lg border hover:bg-gray-50 transition"
-                    >
-                      GitHub
-                    </button>
-                  </div>
                 </form>
               </div>
             </div>
