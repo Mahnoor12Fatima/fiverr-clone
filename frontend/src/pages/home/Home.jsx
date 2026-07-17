@@ -370,7 +370,7 @@ if (currentUser?.isSeller) {
                 key={index}
                 className="border border-gray-200 rounded-3xl p-10 hover:shadow-lg transition-all"
               >
-                <div className="w-16 h-16 rounded-2xl bg-black text-white flex items-center justify-center mb-6">
+                <div className="w-16 h-16 rounded-2xl bg-green-600 text-white flex items-center justify-center mb-6">
                   <Icon size={28} />
                 </div>
 
