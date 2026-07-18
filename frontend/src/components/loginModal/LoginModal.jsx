@@ -394,9 +394,7 @@ const handleSubmit = async (e) => {
                         <option value="seller">
                           Seller
                         </option>
-                        <option value="admin">
-                          Admin
-                        </option>
+                     
                       </select>
                     </>
                   )}
